@@ -6,6 +6,7 @@
 * &p_res : désigne l'@dresse de la variable
 * Si on place : * devant variable stockée = valeur du pointeur
 
+### Compiler programme (c)
 ```
 gcc fichier.c -o -nomexecutable
 ```
