@@ -5,3 +5,7 @@
 * p_res : désigne la variable
 * &p_res : désigne l'@dresse de la variable
 * Si on place : * devant variable stockée = valeur du pointeur
+
+```
+gcc fichier.c -o -nomexecutable
+```
