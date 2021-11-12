@@ -21,12 +21,17 @@ typedef struct {
 // Entetes 
 void initialize(coordonnees *point);
 void affichage(coordonnees *point);
+void multiplication(coordonnees *point);
+void addition(coordonnees *point);
 
 // Main
 int main(int argc, char *argv[] ) { 
     coordonnees point;
     initialize(&point);
     affichage(&point);
+    printf("\n");
+    multiplication(&point);
+    addition(&point);
 }
 
 // Fonction initaliser
@@ -41,4 +46,20 @@ void affichage(coordonnees *point) {
     printf("Valeur de x : %d", point->x);
     printf("\nValeur de y : %d", point->y);
     printf("\nValeur de z : %d", point->z);
+}
+
+// Fonction Multiplication
+// Multiplie x et y puis stocke le contenu dans z
+void multiplication(coordonnees *point) {
+    point->z = point->x * point->y;
+    printf("\n");
+    printf("Résultat de la multiplication : %d", point->z);
+}
+
+// Fonction Addition
+// Additionne y et z puis stocke le contenu dans z
+void addition(coordonnees *point) {
+    point->z = point->y + point->z;
+    printf("\n");
+    printf("Résultat de l'addition : %d", point->z);
 }
