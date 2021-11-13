@@ -10,3 +10,19 @@
 ```
 gcc fichier.c -o -nomexecutable
 ```
+
+### Windows commands
+
+- Afficher les documents présent à l'emplacement
+```
+dir
+```
+
+- Executer un fichier compilé
+```
+file.exe
+```
+- Se rendre dans une partition externe
+```
+d:
+```
