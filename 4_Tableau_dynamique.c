@@ -4,14 +4,13 @@
 #include <fcntl.h>  
 #include <time.h>
 
-
 // Main
 int main(int argc, char *argv[] ) { 
     int taille = 0;
-
-    scanf ("%d", &taille);
-    printf ("%d\n", taille);
-
+    printf("Saisir la taille du tableau :");
+    scanf("%d", &taille);
+    //printf ("%d\n", taille);
+    return 0;
     /*float* p;
     p=( float*) malloc(n*sizeof(float ));
     if(p!=NULL)
