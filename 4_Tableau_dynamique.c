@@ -9,7 +9,7 @@ int main(int argc, char *argv[] ) {
     int taille = 0;
     printf("Saisir la taille du tableau :");
     scanf("%d", &taille);
-    //printf ("%d\n", taille);
+    printf ("Taille du tableau : %d\n", taille);
     return 0;
     /*float* p;
     p=( float*) malloc(n*sizeof(float ));
@@ -20,6 +20,7 @@ int main(int argc, char *argv[] ) {
     else
     {
     }*/
+    
     /* Initialise le générateur aléatoires
     srand (time(NULL));
     printf ("First number: %d\n", rand()%100);
