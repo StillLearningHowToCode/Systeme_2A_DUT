@@ -1,31 +1,28 @@
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <string.h>  
-#include <fcntl.h>  
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <fcntl.h>
 #include <time.h>
 
 // Main
-int main(int argc, char *argv[] ) { 
+int main(int argc, char *argv[])
+{
     int taille = 0;
     printf("Saisir la taille du tableau :");
-    scanf("%d", &taille);
-    printf ("Taille du tableau : %d\n", taille);
-    return 0;
-    /*float* p;
-    p=( float*) malloc(n*sizeof(float ));
-    if(p!=NULL)
+    scanf("%d", &taille); //taille est définie ici, pas besoin de la réattribuer
+    printf("Taille du tableau : %d\n", taille);
+
+    int tab[taille]; // tableau d'entier car int
+    for (int i = 0; i < taille; i++)
     {
-    //tout s’est bien passe: p pointe le debut du tableau alloué
+        printf("%d", tab[i]);
+        printf("\n");
     }
-    else
-    {
-    }*/
-    
+
     /* Initialise le générateur aléatoires
     srand (time(NULL));
     printf ("First number: %d\n", rand()%100);
     printf ("First number: %d\n", rand()%100);
     printf ("First number: %d\n", rand()%100);*/
-
-    //return 0;
+    return 0;
 }
