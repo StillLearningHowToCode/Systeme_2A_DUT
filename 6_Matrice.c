@@ -63,6 +63,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+// Fonction génération nb random entre 0 et 100
 int randomNumber() {
     return (rand() % (NB_MAX - NB_MIN)) + NB_MIN;
 }
