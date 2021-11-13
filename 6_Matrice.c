@@ -3,6 +3,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <time.h>
+// Variables
 #define NB_MIN 0
 #define NB_MAX 100
 #define MIN_LIGNE 2
