@@ -22,3 +22,7 @@ dir
 ```
 file.exe
 ```
+- Se rendre dans une partition externe
+```
+d:
+```
