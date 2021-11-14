@@ -49,10 +49,12 @@ int main()
             count++;
         }
     }
+    // Resaisie de la chaine :(
     for (i = 0; i < count; i++)
         // Saisie d'une  chaîne de 100 caractères maximum
         scanf("%100s", tab_chaine[i]);
-        
+    // count = strnlen();
+
     printf("\nLe nombre total de mots dans cette chaine est = %d", count);
     // fin test saisie
 
