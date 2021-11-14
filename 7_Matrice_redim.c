@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
     /* Déclarations */
     int *matrice;
     int U[50][50];            /* matrice unitaire */
-    int colonne, ligne, i, j; /* dimension de la matrice unitaire */
-    /*int I, J;       indices courants */
+    int colonne, ligne, i, j; /* dimension de la matrice unitaire + indices courants */
+    char rep;
 
     /* Saisie des données */
     printf("Dimension de la matrice (max.50) : \n");
@@ -61,10 +61,50 @@ int main(int argc, char *argv[])
         }
         printf("\n");
     }
+
+    printf("Voulez vous redimmensionner la matrice ? o/n\n");
+    scanf("%s", &rep);
+    getchar();
+    if ((strcmp(&rep, "o") == 0))
+    {
+        printf("Dimension de la matrice (max.50) : \n");
+        printf("Veuillez entrer le nombre de colonnes : ");
+        scanf("%d", &colonne);
+        printf("Veuillez entrer le nombre de lignes : ");
+        scanf("%d", &ligne);
+
+        matrice = malloc(ligne * colonne * sizeof(int));
+
+        //Remplissage "random"
+        srand(time(NULL));
+        for (i = 0; i < ligne; i++)
+        {
+            for (j = 0; j < colonne; j++)
+            {
+                int random = randomNumber();
+                printf("%d", random);
+            }
+        }
+
+        printf("\nVotre matrice est : \n");
+        for (i = 0; i < ligne; i++)
+        {
+            for (j = 0; j < colonne; j++)
+            {
+                printf("%d  ", matrice[i * colonne + j]);
+            }
+            printf("\n");
+        }
+    }
+    else
+    {
+        printf("Fin du programme");
+    }
     return 0;
 }
 
 // Fonction génération nb random entre 0 et 100
-int randomNumber() {
+int randomNumber()
+{
     return (rand() % (NB_MAX - NB_MIN)) + NB_MIN;
 }
