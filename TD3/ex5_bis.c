@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 
-int main(int argc, char const *argv[])
+void main()
 {
     printf("Très bien\n");
 }
