@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     printf("Saisissez votre nom suivi de votre prénom : ");
     res = scanf("%49s%49s", nom, prenom);
     if (res == 2)
-        printf("Vous vous appelez %s %s, est-ce correct ?\n", prenom, nom);
+        printf("Très bien %s %s\n", prenom, nom);
     else
         printf("Vous avez fait une erreur lors de la saisie.\n");
 }
