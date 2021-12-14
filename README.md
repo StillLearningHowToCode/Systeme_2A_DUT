@@ -1,0 +1,6 @@
+# 📖 🐛
+
+
+    Ctrl+C - SIGINT
+    Ctrl+\ - SIGQUIT
+    Ctrl+Z - SIGTSTP
